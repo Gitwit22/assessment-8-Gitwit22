@@ -1,0 +1,18 @@
+
+
+<table class="movie-table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Release Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let Movie of movies">
+            <tr>
+                <td>{{ Movie.title }}</td>
+                <td>{{ Movie.releaseYear }}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
